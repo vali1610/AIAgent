@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  aiagent:
+    build: .
+    image: aiagent:latest
+    container_name: aiagent
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+    volumes:
+      # Mount calculator directory for the agent to work with
+      - ./calculator:/app/calculator
+    stdin_open: true
+    tty: true
+    command: ["how does the calculator work?"]
