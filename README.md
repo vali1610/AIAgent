@@ -113,10 +113,4 @@ AIAgent/
 - All file operations are validated
 - Environment variables for sensitive data
 
-## License
 
-MIT
-
-## Contributing
-
-Pull requests welcome!
